@@ -3,30 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task</title>
+    <title>Task Board</title>
     <link rel="stylesheet" href="./css_m.css">
 </head>
 <body>
+    <!-- Task Creation Form -->
+    <div class="task-form">
+        <input type="text" id="taskInput" placeholder="Enter a new task">
+        <button id="addTaskBtn">Add Task</button>
+    </div>
+
+    <!-- Task Board Columns -->
     <div class="board">
         <!-- To Do Column -->
         <div class="column">
             <h2>To Do</h2>
-            <div class="task" draggable="true">Task 1</div>
-            <div class="task" draggable="true">Task 2</div>
         </div>
 
         <!-- In Progress Column -->
         <div class="column">
             <h2>In Progress</h2>
-            <div class="task" draggable="true">Task 3</div>
         </div>
 
         <!-- Done Column -->
         <div class="column">
             <h2>Done</h2>
-            <div class="task" draggable="true">Task 4</div>
         </div>
     </div>
+
     <script src="./script_m.js"></script>
 </body>
 </html>

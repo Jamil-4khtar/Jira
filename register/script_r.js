@@ -13,12 +13,16 @@ registerRef.addEventListener("click", (e) => {
 
     if (name == "" || email == "" || password == "" || confirmPassword == "") {
         alert("Please fill out all fields");
+        return;
     }else if (!email.includes("@") && !email.includes(".")) {
         alert("Invalid email format");
+        return;
     } else if (password.length < 8) {
         alert("Password must be at least 8 characters long");
+        return;
     } else if (password !== confirmPassword) {
         alert("Passwords do not match");
+        return;
     }
     let user = { 
         name: name,
