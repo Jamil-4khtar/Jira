@@ -1,70 +1,82 @@
-* {
-    margin: 0;
+*{
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-}
-
-.board {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header {
+    width: 100%;
+    display: flex;
     padding: 20px;
-}
-
-.column {
-    width: 30%;
-    background-color: #e0e0e0;
-    border-radius: 8px;
-    padding: 10px;
-}
-
-h2 {
-    text-align: center;
     margin-bottom: 10px;
-}
+    background: #007bff;
+    justify-content: space-between;
 
-.task {
-    background-color: white;
-    border-radius: 5px;
+}
+header h3 {
+    font: 2em poppins;
+}
+header button {
+    background: transparent;
+    font: 1em poppins;
+    border: none;
+}
+.board {
+    width: 90%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    padding: 20px;
+    background: #00000035;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+}
+.todo-container {
+    width: 100%;
+    overflow: hidden;
     padding: 10px;
-    margin: 10px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    cursor: grab;
+}
+.inProgress {
+    padding: 10px;
+    width: 100%;
     overflow: hidden;
 }
-
-.task:hover {
-    background-color: #f0f0f0;
-}
-
-.task-form {
-    margin: 20px;
-    text-align: center;
-}
-
-#taskInput {
+.done {
+    overflow: hidden;
     padding: 10px;
-    width: 70%;
-    margin-right: 10px;
+    width: 100%;
 }
 
-#addTaskBtn {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
+.todo {
+    min-height: 50px;
+}
+#plus {
+    background: #007bff;
     border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.572);
+    border-radius: 50%;
+    color: #ffffff;
     cursor: pointer;
+    font-size: 24px;
+    margin-top: 10px;
+    height: 40px;
+    width: 40px;
 }
-
-#addTaskBtn:hover {
-    background-color: #0056b3;
-}
-
-button {
-    margin-left: 10px;
-    cursor: pointer;
+.newCard {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 10px 10px 0;
+    overflow: hidden;
+    box-shadow: 0 0 5px black;
+    height: 50px;
+    background-color: #fcf8f8;
+    border-radius: 10px;
 }

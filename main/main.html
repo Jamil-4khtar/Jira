@@ -7,30 +7,23 @@
     <link rel="stylesheet" href="./css_m.css">
 </head>
 <body>
-    <!-- Task Creation Form -->
-    <div class="task-form">
-        <input type="text" id="taskInput" placeholder="Enter a new task">
-        <button id="addTaskBtn">Add Task</button>
-    </div>
-
-    <!-- Task Board Columns -->
+    <header>
+        <h3>Jira</h3>
+        <button>Logout</button>
+    </header>
     <div class="board">
-        <!-- To Do Column -->
-        <div class="column">
+        <div class="todo-container">
             <h2>To Do</h2>
+            <div class="todo column"></div>
+            <button id="plus">+</button>
         </div>
-
-        <!-- In Progress Column -->
-        <div class="column">
+        <div class="inProgress column">
             <h2>In Progress</h2>
         </div>
-
-        <!-- Done Column -->
-        <div class="column">
+        <div class="done column">
             <h2>Done</h2>
         </div>
     </div>
-
     <script src="./script_m.js"></script>
 </body>
 </html>
