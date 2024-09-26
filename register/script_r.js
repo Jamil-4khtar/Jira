@@ -32,5 +32,5 @@ registerRef.addEventListener("click", (e) => {
     
     localStorage.setItem(email, JSON.stringify(user));
     alert("Registration successful!");
-    window.location.href = "/index.html";
+    window.location.href = "../index.html";
 });
