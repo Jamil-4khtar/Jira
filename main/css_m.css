@@ -28,7 +28,8 @@ header button {
     font: 1em poppins;
     border: none;
 }
-.board {
+.board {    
+    margin: 10px;
     width: 90%;
     height: 70%;
     display: grid;

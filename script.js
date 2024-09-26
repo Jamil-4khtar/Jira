@@ -18,6 +18,7 @@ login.addEventListener('click', function(e) {
         let userData = JSON.parse(user);
         if (userData.password === password) {
             alert("Logged in successfully!");
+            localStorage.setItem("userID", email);
             window.location.href = "./main/main.html";
         } else {
             alert("Incorrect password");
